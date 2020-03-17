@@ -6,8 +6,8 @@ public class InternalExternalLinkVarification {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.setProperty("webdriver.chrome.driver.", "C:/Users/Pankaj/Desktop/assignments/chromedriver.exe");
-WebDriver driver = new ChromeDriver();
+WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
 //launch the browser
 driver.get("https://en.wikipedia.org/wiki/Selenium_(software)");
 

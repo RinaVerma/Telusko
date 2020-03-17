@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Adminlogin {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","C:/Users/Pankaj/Desktop/assignments/chromedriver.exe");
+		WebdriverManager.ChromeDriver.setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.gcrit.com/build3/admin/");
 		driver.findElement(By.name("username")).sendKeys("admin");

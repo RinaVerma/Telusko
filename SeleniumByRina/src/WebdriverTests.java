@@ -7,7 +7,7 @@ public class WebdriverTests extends UserDefinedMethod{
 		WebdriverTests obj = new WebdriverTests();
 		obj.launchBrowser();
 		obj.adminlog();
-		driver.findElement(By.linkText("Online Catalog")).click();
+		driver.findElement(By.linkText("Online     						Catalog")).click();
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		

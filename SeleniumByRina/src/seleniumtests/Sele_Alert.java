@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Sele_Alert {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Pankaj/Desktop/assignments/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		driver.manage().window().maximize();

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Buttons_sele {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Pankaj/Desktop/assignments/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.pizzahut.com/");
 		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div[1]/div[2]/div/a/picture/img")).click();

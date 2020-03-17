@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class Sample {
 @Test
 	public void VerifyTitle(){
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Pankaj/Desktop/assignments/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.gmail.com");
 		
